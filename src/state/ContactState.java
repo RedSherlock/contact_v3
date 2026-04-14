@@ -7,13 +7,13 @@ import java.util.Map;
 
 // 연락처를 저장할 map 저장공간과 id를 자동증가할 변수
 public class ContactState {
-    //연락처를 저장할 맵 선언
+    // 연락처를 저장할 맵 선언
     private Map<Long, Contact> store = new HashMap<>();
 
-    //id를 자동증가 시킬 변수
+    // id를 자동증가시킬 변수
     private Long nextId = 1L;
 
-    //Getter
+    // Getter
     public Map<Long, Contact> getStore() {
         return store;
     }
@@ -22,8 +22,8 @@ public class ContactState {
         return nextId;
     }
 
-    //Setter
-    public void setStore(Map<Long,Contact> store) {
+    // Setter
+    public void setStore(Map<Long, Contact> store) {
         this.store = store;
     }
 
